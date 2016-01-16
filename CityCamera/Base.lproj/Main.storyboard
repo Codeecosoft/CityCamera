@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,13 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4n-Sq-iky">
-                                <rect key="frame" x="16" y="28" width="134" height="250"/>
-                                <state key="normal" image="dugme1"/>
-                                <connections>
-                                    <segue destination="PWY-U9-Miz" kind="modal" modalTransitionStyle="coverVertical" id="kse-XS-Hs2"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gm-Wl-n9P">
                                 <rect key="frame" x="170" y="298" width="134" height="250"/>
                                 <state key="normal" backgroundImage="dugme4"/>
@@ -36,13 +29,52 @@
                                 <rect key="frame" x="170" y="28" width="134" height="250"/>
                                 <state key="normal" backgroundImage="dugme2"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4n-Sq-iky">
+                                <rect key="frame" x="16" y="28" width="134" height="250"/>
+                                <state key="normal" backgroundImage="dugme1"/>
+                                <connections>
+                                    <segue destination="PWY-U9-Miz" kind="modal" modalTransitionStyle="coverVertical" id="kse-XS-Hs2"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="about" translatesAutoresizingMaskIntoConstraints="NO" id="nj9-8a-Y7E">
+                                <rect key="frame" x="23" y="363" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="AUd-ef-s4E"/>
+                                    <constraint firstAttribute="width" constant="120" id="hYb-LM-kW3"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="send" translatesAutoresizingMaskIntoConstraints="NO" id="2v3-qN-Du0">
+                                <rect key="frame" x="177" y="363" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="dOw-7y-CLY"/>
+                                    <constraint firstAttribute="height" constant="120" id="yKa-2b-349"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="4gN-x8-6e4">
+                                <rect key="frame" x="177" y="93" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="CNp-a6-7Nf"/>
+                                    <constraint firstAttribute="height" constant="120" id="hdd-pd-JtP"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="5aT-fu-4fs">
+                                <rect key="frame" x="23" y="93" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="CHQ-cG-z25"/>
+                                    <constraint firstAttribute="width" constant="120" id="n2o-14-Cju"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="4gN-x8-6e4" firstAttribute="centerY" secondItem="DxP-km-zC8" secondAttribute="centerY" id="77x-or-krP"/>
+                            <constraint firstItem="5aT-fu-4fs" firstAttribute="centerY" secondItem="F4n-Sq-iky" secondAttribute="centerY" id="Ck9-0U-oqk"/>
                             <constraint firstItem="5Gm-Wl-n9P" firstAttribute="height" secondItem="F4n-Sq-iky" secondAttribute="height" id="H1s-ZK-vnr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5Gm-Wl-n9P" secondAttribute="trailing" id="HQo-cb-uhW"/>
                             <constraint firstAttribute="leadingMargin" secondItem="F4n-Sq-iky" secondAttribute="leading" id="R0D-lT-MKl"/>
                             <constraint firstItem="DxP-km-zC8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="RTN-9p-IGi"/>
+                            <constraint firstItem="2v3-qN-Du0" firstAttribute="centerY" secondItem="5Gm-Wl-n9P" secondAttribute="centerY" id="Sl5-Jw-0lc"/>
+                            <constraint firstItem="nj9-8a-Y7E" firstAttribute="centerX" secondItem="bwT-oq-ZX2" secondAttribute="centerX" id="UmT-zM-aga"/>
                             <constraint firstItem="bwT-oq-ZX2" firstAttribute="height" secondItem="F4n-Sq-iky" secondAttribute="height" id="Ycy-Ja-nyQ"/>
                             <constraint firstItem="DxP-km-zC8" firstAttribute="leading" secondItem="F4n-Sq-iky" secondAttribute="trailing" constant="20" id="Z6f-qx-6Tq"/>
                             <constraint firstItem="DxP-km-zC8" firstAttribute="height" secondItem="F4n-Sq-iky" secondAttribute="height" id="a2r-l3-sWi"/>
@@ -50,10 +82,15 @@
                             <constraint firstItem="bwT-oq-ZX2" firstAttribute="top" secondItem="F4n-Sq-iky" secondAttribute="bottom" constant="20" id="dpH-Gr-7tc"/>
                             <constraint firstItem="F4n-Sq-iky" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="egU-mu-nau"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5Gm-Wl-n9P" secondAttribute="bottom" constant="20" id="fhE-u3-i0z"/>
+                            <constraint firstItem="4gN-x8-6e4" firstAttribute="centerX" secondItem="DxP-km-zC8" secondAttribute="centerX" id="h6l-b3-rZS"/>
                             <constraint firstAttribute="leadingMargin" secondItem="bwT-oq-ZX2" secondAttribute="leading" id="hHF-lq-k4l"/>
                             <constraint firstItem="bwT-oq-ZX2" firstAttribute="width" secondItem="F4n-Sq-iky" secondAttribute="width" id="ht4-hE-dEK"/>
+                            <constraint firstItem="5aT-fu-4fs" firstAttribute="centerX" secondItem="F4n-Sq-iky" secondAttribute="centerX" id="iIn-5q-ixb"/>
                             <constraint firstItem="DxP-km-zC8" firstAttribute="width" secondItem="F4n-Sq-iky" secondAttribute="width" id="jOO-k2-BAR"/>
+                            <constraint firstItem="5aT-fu-4fs" firstAttribute="centerY" secondItem="F4n-Sq-iky" secondAttribute="centerY" id="m0y-G2-UAR"/>
                             <constraint firstItem="5Gm-Wl-n9P" firstAttribute="width" secondItem="F4n-Sq-iky" secondAttribute="width" id="p9H-cx-gU1"/>
+                            <constraint firstItem="nj9-8a-Y7E" firstAttribute="centerY" secondItem="bwT-oq-ZX2" secondAttribute="centerY" id="rfm-0I-Tum"/>
+                            <constraint firstItem="2v3-qN-Du0" firstAttribute="centerX" secondItem="5Gm-Wl-n9P" secondAttribute="centerX" id="sGK-i8-HJa"/>
                             <constraint firstItem="5Gm-Wl-n9P" firstAttribute="top" secondItem="DxP-km-zC8" secondAttribute="bottom" constant="20" id="tNm-pK-HJX"/>
                             <constraint firstItem="5Gm-Wl-n9P" firstAttribute="leading" secondItem="bwT-oq-ZX2" secondAttribute="trailing" constant="20" id="tmj-xB-Vxz"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bwT-oq-ZX2" secondAttribute="bottom" constant="20" id="x1w-1S-4T0"/>
@@ -79,6 +116,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thumb_fotografija-opcije_1024" translatesAutoresizingMaskIntoConstraints="NO" id="yr0-L1-Fck">
                                 <rect key="frame" x="20" y="28" width="280" height="520"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xos-6u-FbT">
+                                <rect key="frame" x="5" y="530" width="194" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -89,10 +130,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="about" width="940" height="828"/>
         <image name="dugme1" width="470" height="724"/>
         <image name="dugme2" width="470" height="724"/>
         <image name="dugme3" width="470" height="726"/>
         <image name="dugme4" width="469" height="726"/>
+        <image name="location" width="940" height="828"/>
+        <image name="photo" width="940" height="828"/>
+        <image name="send" width="940" height="828"/>
         <image name="thumb_fotografija-opcije_1024" width="665" height="1182"/>
     </resources>
 </document>
