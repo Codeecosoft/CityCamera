@@ -19,49 +19,45 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gm-Wl-n9P">
                                 <rect key="frame" x="170" y="298" width="134" height="250"/>
-                                <state key="normal" backgroundImage="dugme4"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwT-oq-ZX2">
                                 <rect key="frame" x="16" y="298" width="134" height="250"/>
-                                <state key="normal" backgroundImage="dugme3"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxP-km-zC8">
-                                <rect key="frame" x="170" y="28" width="134" height="250"/>
-                                <state key="normal" backgroundImage="dugme2"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4n-Sq-iky">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4n-Sq-iky">
                                 <rect key="frame" x="16" y="28" width="134" height="250"/>
-                                <state key="normal" backgroundImage="dugme1"/>
                                 <connections>
                                     <segue destination="PWY-U9-Miz" kind="modal" modalTransitionStyle="coverVertical" id="kse-XS-Hs2"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="about" translatesAutoresizingMaskIntoConstraints="NO" id="nj9-8a-Y7E">
-                                <rect key="frame" x="23" y="363" width="120" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="AUd-ef-s4E"/>
-                                    <constraint firstAttribute="width" constant="120" id="hYb-LM-kW3"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="send" translatesAutoresizingMaskIntoConstraints="NO" id="2v3-qN-Du0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxP-km-zC8">
+                                <rect key="frame" x="170" y="28" width="134" height="250"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="send" highlightedImage="send_pressed" translatesAutoresizingMaskIntoConstraints="NO" id="2v3-qN-Du0">
                                 <rect key="frame" x="177" y="363" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="dOw-7y-CLY"/>
                                     <constraint firstAttribute="height" constant="120" id="yKa-2b-349"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="4gN-x8-6e4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="photo" highlightedImage="photo_pressed" translatesAutoresizingMaskIntoConstraints="NO" id="5aT-fu-4fs">
+                                <rect key="frame" x="23" y="93" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="CHQ-cG-z25"/>
+                                    <constraint firstAttribute="width" constant="120" id="n2o-14-Cju"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="location" highlightedImage="location_pressed" translatesAutoresizingMaskIntoConstraints="NO" id="4gN-x8-6e4">
                                 <rect key="frame" x="177" y="93" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="CNp-a6-7Nf"/>
                                     <constraint firstAttribute="height" constant="120" id="hdd-pd-JtP"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="5aT-fu-4fs">
-                                <rect key="frame" x="23" y="93" width="120" height="120"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="about" highlightedImage="about_pressed" translatesAutoresizingMaskIntoConstraints="NO" id="nj9-8a-Y7E">
+                                <rect key="frame" x="23" y="363" width="120" height="120"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="CHQ-cG-z25"/>
-                                    <constraint firstAttribute="width" constant="120" id="n2o-14-Cju"/>
+                                    <constraint firstAttribute="height" constant="120" id="AUd-ef-s4E"/>
+                                    <constraint firstAttribute="width" constant="120" id="hYb-LM-kW3"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -131,13 +127,13 @@
     </scenes>
     <resources>
         <image name="about" width="940" height="828"/>
-        <image name="dugme1" width="470" height="724"/>
-        <image name="dugme2" width="470" height="724"/>
-        <image name="dugme3" width="470" height="726"/>
-        <image name="dugme4" width="469" height="726"/>
+        <image name="about_pressed" width="940" height="828"/>
         <image name="location" width="940" height="828"/>
+        <image name="location_pressed" width="940" height="828"/>
         <image name="photo" width="940" height="828"/>
+        <image name="photo_pressed" width="940" height="828"/>
         <image name="send" width="940" height="828"/>
+        <image name="send_pressed" width="940" height="828"/>
         <image name="thumb_fotografija-opcije_1024" width="665" height="1182"/>
     </resources>
 </document>
