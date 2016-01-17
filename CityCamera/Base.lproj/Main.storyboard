@@ -31,6 +31,9 @@
                                 <rect key="frame" x="16" y="298" width="134" height="250"/>
                                 <state key="normal" image="about"/>
                                 <state key="highlighted" image="about_pressed"/>
+                                <connections>
+                                    <action selector="camTest" destination="BYZ-38-t0r" eventType="touchUpInside" id="fb3-JX-rW6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4n-Sq-iky">
                                 <rect key="frame" x="16" y="28" width="134" height="250"/>
@@ -74,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="162" y="395"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo View Controller-->
         <scene sceneID="LFj-Xu-aIa">
             <objects>
-                <viewController id="PWY-U9-Miz" sceneMemberID="viewController">
+                <viewController id="PWY-U9-Miz" customClass="PhotoViewController" customModule="CityCamera" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YEQ-0D-zRN"/>
                         <viewControllerLayoutGuide type="bottom" id="mjz-LX-6w5"/>
@@ -86,16 +89,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thumb_fotografija-opcije_1024" translatesAutoresizingMaskIntoConstraints="NO" id="yr0-L1-Fck">
-                                <rect key="frame" x="20" y="28" width="280" height="520"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XL7-TO-Nm7">
+                                <rect key="frame" x="136" y="500" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="close" destination="PWY-U9-Miz" eventType="touchUpInside" id="Btl-jM-jw7"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2U5-kw-HfS">
+                                <rect key="frame" x="20" y="66" width="280" height="426"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xos-6u-FbT">
-                                <rect key="frame" x="5" y="530" width="194" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwM-Ch-0qs">
+                                <rect key="frame" x="19" y="20" width="48" height="30"/>
+                                <state key="normal" title="Library"/>
+                                <connections>
+                                    <action selector="photofromLibrary:" destination="PWY-U9-Miz" eventType="touchUpInside" id="mRc-uF-rvb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xID-sF-huM">
+                                <rect key="frame" x="259" y="20" width="41" height="30"/>
+                                <state key="normal" title="Photo"/>
+                                <connections>
+                                    <action selector="shootPhoto:" destination="PWY-U9-Miz" eventType="touchUpInside" id="Bwq-mR-HuZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="myImageView" destination="2U5-kw-HfS" id="OVZ-Oa-u8J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8rJ-ZO-Wyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,6 +136,5 @@
         <image name="photo_pressed" width="940" height="828"/>
         <image name="send" width="940" height="828"/>
         <image name="send_pressed" width="940" height="828"/>
-        <image name="thumb_fotografija-opcije_1024" width="665" height="1182"/>
     </resources>
 </document>
