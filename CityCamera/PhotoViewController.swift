@@ -89,12 +89,11 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
         
         
         // Set the storyboard name by default is Main
-        let storyboard = UIStoryboard(name: "MyStoryboardName", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         // Instantiate the ViewController with the name you set before like in the image
-        let nextViewController = storyboard.instantiateViewControllerWithIdentifier("ViewControllerB") 
+        let nextViewController = storyboard.instantiateViewControllerWithIdentifier("PhotoDisplayView") 
         // present the nextViewController
         self.presentViewController(nextViewController, animated: true, completion: nil)
-        dismissViewControllerAnimated(true, completion: nil)
     }
         
     

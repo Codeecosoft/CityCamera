@@ -8,9 +8,17 @@
 
 import UIKit
 
+
+
 class DataManager {
+    
     var image:UIImage? = nil
+    
     var longitude:String? = nil
+    
     var latitude:String? = nil
+    
     static let sharedInstance = DataManager()
+    
 }
+
