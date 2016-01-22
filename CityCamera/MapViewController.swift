@@ -24,6 +24,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UITextFiel
     var performingReverseGeocoding = false
     var lastGeocodingError: NSError?
     
+    var longitude = ""
+    var latitude = ""
+    
     
     func getLocation() {
         let authStatus = CLLocationManager.authorizationStatus()
@@ -79,8 +82,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UITextFiel
   
     
     func stopLocationManager() {
+        
             locationManager.stopUpdatingLocation()
             locationManager.delegate = nil
+        
     }
     
     func updateAddress() {
@@ -145,6 +150,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UITextFiel
                 let span = MKCoordinateSpanMake(0.001, 0.001)
                 let center = CLLocationCoordinate2D(latitude: newLocation.coordinate.latitude, longitude: newLocation.coordinate.longitude)
                 let region = MKCoordinateRegion(center: center,span: span )
+                self.longitude = String(newLocation.coordinate.longitude)
+                self.latitude = String(newLocation.coordinate.latitude)
                 
                 self.mapView.setRegion(region, animated: true)
                 
@@ -163,9 +170,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UITextFiel
     
     @IBAction func close() {
         dismissViewControllerAnimated(true, completion: nil)
+        DataManager.sharedInstance.latitude = nil
+        DataManager.sharedInstance.longitude = nil
+        DataManager.sharedInstance.address = nil
     }
     
      func addressChanged() {
         stopLocationManager()
+        DataManager.sharedInstance.latitude = self.latitude
+        DataManager.sharedInstance.longitude = self.longitude
+        DataManager.sharedInstance.address = self.addressT.text
     }
 }
