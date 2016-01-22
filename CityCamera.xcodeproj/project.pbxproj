@@ -12,7 +12,8 @@
 		A92363CF1C443BC100077101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92363CD1C443BC100077101 /* Main.storyboard */; };
 		A92363D11C443BC100077101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92363D01C443BC100077101 /* Assets.xcassets */; };
 		A92363D41C443BC100077101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92363D21C443BC100077101 /* LaunchScreen.storyboard */; };
-		A92363DC1C47134200077101 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92363DB1C47134200077101 /* PhotoViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A92363DC1C47134200077101 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92363DB1C47134200077101 /* PhotoViewController.swift */; };
+		BB58EBA21C4BAC9500B9E226 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58EBA11C4BAC9500B9E226 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A92363D31C443BC100077101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A92363D51C443BC100077101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A92363DB1C47134200077101 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		BB58EBA11C4BAC9500B9E226 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A92363D01C443BC100077101 /* Assets.xcassets */,
 				A92363D21C443BC100077101 /* LaunchScreen.storyboard */,
 				A92363D51C443BC100077101 /* Info.plist */,
+				BB58EBA11C4BAC9500B9E226 /* MapViewController.swift */,
 			);
 			path = CityCamera;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				A92363CC1C443BC100077101 /* ViewController.swift in Sources */,
 				A92363CA1C443BC100077101 /* AppDelegate.swift in Sources */,
 				A92363DC1C47134200077101 /* PhotoViewController.swift in Sources */,
+				BB58EBA21C4BAC9500B9E226 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
