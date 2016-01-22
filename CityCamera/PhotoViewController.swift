@@ -8,6 +8,13 @@
 
 import UIKit
 
+
+class SharingManager {
+    var welcomeMessage:String = "Default Message"
+    static let sharedInstance = SharingManager()
+}
+
+
 class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     let picker = UIImagePickerController()
     @IBOutlet weak var myImageView: UIImageView!
@@ -41,7 +48,6 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
     @IBAction func photofromLibrary(sender: UIButton) {
         picker.allowsEditing = false
         picker.sourceType = .PhotoLibrary
-
         presentViewController(picker, animated: true, completion: nil)
     }
 
@@ -57,6 +63,7 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
     }
     
     @IBAction func close() {
+        DataManager.sharedInstance.image = nil
         dismissViewControllerAnimated(true , completion: nil)
     }
     
@@ -78,11 +85,13 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
         let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         myImageView.contentMode = .ScaleAspectFit
         myImageView.image = chosenImage
+        DataManager.sharedInstance.image = chosenImage
         dismissViewControllerAnimated(true, completion: nil)
     }
         
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        DataManager.sharedInstance.image = nil
         dismissViewControllerAnimated(true, completion: nil)
     }
     

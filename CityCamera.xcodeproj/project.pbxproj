@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A91E47F81C4BFFE70086E4D4 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91E47F71C4BFFE70086E4D4 /* DataManager.swift */; };
 		A92363CA1C443BC100077101 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92363C91C443BC100077101 /* AppDelegate.swift */; };
 		A92363CC1C443BC100077101 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92363CB1C443BC100077101 /* ViewController.swift */; };
 		A92363CF1C443BC100077101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92363CD1C443BC100077101 /* Main.storyboard */; };
 		A92363D11C443BC100077101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92363D01C443BC100077101 /* Assets.xcassets */; };
 		A92363D41C443BC100077101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92363D21C443BC100077101 /* LaunchScreen.storyboard */; };
-		A92363DC1C47134200077101 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92363DB1C47134200077101 /* PhotoViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A92363DC1C47134200077101 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92363DB1C47134200077101 /* PhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A91E47F71C4BFFE70086E4D4 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		A92363C61C443BC100077101 /* CityCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92363C91C443BC100077101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A92363CB1C443BC100077101 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				A92363D01C443BC100077101 /* Assets.xcassets */,
 				A92363D21C443BC100077101 /* LaunchScreen.storyboard */,
 				A92363D51C443BC100077101 /* Info.plist */,
+				A91E47F71C4BFFE70086E4D4 /* DataManager.swift */,
 			);
 			path = CityCamera;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A92363CC1C443BC100077101 /* ViewController.swift in Sources */,
+				A91E47F81C4BFFE70086E4D4 /* DataManager.swift in Sources */,
 				A92363CA1C443BC100077101 /* AppDelegate.swift in Sources */,
 				A92363DC1C47134200077101 /* PhotoViewController.swift in Sources */,
 			);
