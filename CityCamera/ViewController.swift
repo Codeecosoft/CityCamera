@@ -14,14 +14,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonSend : UIButton!
     @IBOutlet weak var buttonAbout : UIButton!
     
-
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         scaleButtons();
         // Do any additional setup after loading the view, typically from a nib.
 
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,8 +37,48 @@ class ViewController: UIViewController {
         buttonAbout.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
     }
     
-    @IBAction func camTest() {
+    @IBAction func sendData() {
         
+        let request = NSMutableURLRequest(URL: NSURL(string: getURL())!)
+        request.HTTPMethod = "POST"
+        let postString = getPostString()
+        //TODO konkatenacija svih parametara odvojenih sa &
+        
+        request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
+            guard error == nil && data != nil else {                                                          // check for fundamental networking error
+                print("error=\(error)")
+                return
+            }
+            
+            if let httpStatus = response as? NSHTTPURLResponse where httpStatus.statusCode != 200 {           // check for http errors
+                print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                print("response = \(response)")
+            }
+            
+            let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
+            print("responseString = \(responseString)")
+        }
+        task.resume()
+    }
+    
+    func getURL() -> String {
+        let sbUrl = "http://www.hyperether.com/Mobile/androidWPScript.php?"
+        return sbUrl
+    }
+    
+    func getPostString() -> String {
+        var sbUrl = ""
+        sbUrl+="pN=TESTNOIMAGE&";
+        sbUrl+="IMEI=0&";
+        sbUrl+="sU=noname&";
+        sbUrl+="pC=&";
+        sbUrl+="cS=murija&";
+        sbUrl+="lO=0&";
+        sbUrl+="lA=0&";
+        sbUrl+="aD=noadress";
+        
+        return sbUrl
     }
 }
 

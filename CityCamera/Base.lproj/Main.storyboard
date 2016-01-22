@@ -17,11 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gm-Wl-n9P">
-                                <rect key="frame" x="170" y="298" width="134" height="250"/>
-                                <state key="normal" image="send"/>
-                                <state key="highlighted" image="send_pressed"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxP-km-zC8">
                                 <rect key="frame" x="170" y="28" width="134" height="250"/>
                                 <state key="normal" image="location"/>
@@ -32,18 +27,23 @@
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwT-oq-ZX2">
                                 <rect key="frame" x="16" y="298" width="134" height="250"/>
-                                <state key="normal" image="about"/>
-                                <state key="highlighted" image="about_pressed"/>
-                                <connections>
-                                    <action selector="camTest" destination="BYZ-38-t0r" eventType="touchUpInside" id="fb3-JX-rW6"/>
-                                </connections>
+                                <state key="normal" image="about" backgroundImage="1"/>
+                                <state key="highlighted" image="about_pressed" backgroundImage="2"/>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4n-Sq-iky">
                                 <rect key="frame" x="16" y="28" width="134" height="250"/>
-                                <state key="normal" image="photo"/>
-                                <state key="highlighted" image="photo_pressed"/>
+                                <state key="normal" image="photo" backgroundImage="1"/>
+                                <state key="highlighted" image="photo_pressed" backgroundImage="2"/>
                                 <connections>
                                     <segue destination="PWY-U9-Miz" kind="modal" modalTransitionStyle="coverVertical" id="kse-XS-Hs2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gm-Wl-n9P">
+                                <rect key="frame" x="170" y="298" width="134" height="250"/>
+                                <state key="normal" image="send" backgroundImage="1"/>
+                                <state key="highlighted" image="send_pressed" backgroundImage="2"/>
+                                <connections>
+                                    <action selector="sendData" destination="BYZ-38-t0r" eventType="touchUpInside" id="mh4-HD-mSc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -93,27 +93,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XL7-TO-Nm7">
-                                <rect key="frame" x="136" y="500" width="48" height="30"/>
+                                <rect key="frame" x="136" y="494" width="48" height="30"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <action selector="close" destination="PWY-U9-Miz" eventType="touchUpInside" id="Btl-jM-jw7"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2U5-kw-HfS">
-                                <rect key="frame" x="20" y="66" width="280" height="426"/>
+                                <rect key="frame" x="20" y="71" width="280" height="426"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwM-Ch-0qs">
-                                <rect key="frame" x="19" y="20" width="48" height="30"/>
-                                <state key="normal" title="Library"/>
-                                <connections>
-                                    <action selector="photofromLibrary:" destination="PWY-U9-Miz" eventType="touchUpInside" id="mRc-uF-rvb"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xID-sF-huM">
                                 <rect key="frame" x="259" y="20" width="41" height="30"/>
                                 <state key="normal" title="Photo"/>
                                 <connections>
                                     <action selector="shootPhoto:" destination="PWY-U9-Miz" eventType="touchUpInside" id="Bwq-mR-HuZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwM-Ch-0qs">
+                                <rect key="frame" x="20" y="20" width="48" height="30"/>
+                                <state key="normal" title="Library"/>
+                                <connections>
+                                    <action selector="photofromLibrary:" destination="PWY-U9-Miz" eventType="touchUpInside" id="mRc-uF-rvb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -170,6 +170,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1" width="469" height="724"/>
+        <image name="2" width="470" height="724"/>
         <image name="about" width="940" height="828"/>
         <image name="about_pressed" width="940" height="828"/>
         <image name="location" width="940" height="828"/>
