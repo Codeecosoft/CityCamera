@@ -86,6 +86,14 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
         myImageView.contentMode = .ScaleAspectFit
         myImageView.image = chosenImage
         DataManager.sharedInstance.image = chosenImage
+        
+        
+        // Set the storyboard name by default is Main
+        let storyboard = UIStoryboard(name: "MyStoryboardName", bundle: nil)
+        // Instantiate the ViewController with the name you set before like in the image
+        let nextViewController = storyboard.instantiateViewControllerWithIdentifier("ViewControllerB") 
+        // present the nextViewController
+        self.presentViewController(nextViewController, animated: true, completion: nil)
         dismissViewControllerAnimated(true, completion: nil)
     }
         
