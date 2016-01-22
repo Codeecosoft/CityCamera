@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A91D9E091C529CF800A6C872 /* PhotoDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91D9E081C529CF800A6C872 /* PhotoDisplayViewController.swift */; };
 		A91D9E0D1C52A3C600A6C872 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91D9E0C1C52A3C600A6C872 /* DataManager.swift */; };
+		A91D9E0F1C52A98A00A6C872 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A91D9E0E1C52A98A00A6C872 /* .gitignore */; };
 		A92363CA1C443BC100077101 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92363C91C443BC100077101 /* AppDelegate.swift */; };
 		A92363CC1C443BC100077101 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92363CB1C443BC100077101 /* ViewController.swift */; };
 		A92363CF1C443BC100077101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92363CD1C443BC100077101 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		A91D9E081C529CF800A6C872 /* PhotoDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDisplayViewController.swift; sourceTree = "<group>"; };
 		A91D9E0C1C52A3C600A6C872 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A91D9E0E1C52A98A00A6C872 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A92363C61C443BC100077101 /* CityCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92363C91C443BC100077101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A92363CB1C443BC100077101 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 		A92363BD1C443BC100077101 = {
 			isa = PBXGroup;
 			children = (
+				A91D9E0E1C52A98A00A6C872 /* .gitignore */,
 				A92363C81C443BC100077101 /* CityCamera */,
 				A92363C71C443BC100077101 /* Products */,
 			);
@@ -134,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A91D9E0F1C52A98A00A6C872 /* .gitignore in Resources */,
 				A92363D41C443BC100077101 /* LaunchScreen.storyboard in Resources */,
 				A92363D11C443BC100077101 /* Assets.xcassets in Resources */,
 				A92363CF1C443BC100077101 /* Main.storyboard in Resources */,
