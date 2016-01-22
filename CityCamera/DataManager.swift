@@ -18,6 +18,9 @@ class DataManager {
     
     var latitude:String? = nil
     
+    var address:String? = nil
+
+    
     static let sharedInstance = DataManager()
     
 }
