@@ -8,13 +8,6 @@
 
 import UIKit
 
-
-class SharingManager {
-    var welcomeMessage:String = "Default Message"
-    static let sharedInstance = SharingManager()
-}
-
-
 class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     let picker = UIImagePickerController()
     @IBOutlet weak var myImageView: UIImageView!
@@ -86,14 +79,9 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
         myImageView.contentMode = .ScaleAspectFit
         myImageView.image = chosenImage
         DataManager.sharedInstance.image = chosenImage
-        
-        
-        // Set the storyboard name by default is Main
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        // Instantiate the ViewController with the name you set before like in the image
-        let nextViewController = storyboard.instantiateViewControllerWithIdentifier("PhotoDisplayView") 
-        // present the nextViewController
-        self.presentViewController(nextViewController, animated: true, completion: nil)
+        let nextViewController = storyboard.instantiateViewControllerWithIdentifier("PhotoDisplayView")
+        picker.presentViewController(nextViewController, animated: true, completion: nil)
     }
         
     
