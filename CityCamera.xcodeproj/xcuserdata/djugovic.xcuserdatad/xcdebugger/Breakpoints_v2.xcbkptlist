@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CityCamera/PhotoViewController.swift"
-            timestampString = "474743215.317962"
+            timestampString = "475243191.496684"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "close()"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CityCamera/PhotoViewController.swift"
-            timestampString = "474743167.013659"
+            timestampString = "475243191.496684"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -86,7 +86,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CityCamera/PhotoDisplayViewController.swift"
@@ -97,29 +97,29 @@
             endingLineNumber = "9">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "CityCamera.PhotoDisplayViewController.init (CityCamera.PhotoDisplayViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; CityCamera.PhotoDisplayViewController"
                   moduleName = "CityCamera"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/djugovic/Desktop/CityCamera/CityCamera/PhotoDisplayViewController.swift"
-                  timestampString = "475179195.045427"
+                  timestampString = "475180959.270256"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
-                  offsetFromSymbolStart = "57">
+                  offsetFromSymbolStart = "58">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "CityCamera.PhotoDisplayViewController.init (CityCamera.PhotoDisplayViewController.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;CityCamera.PhotoDisplayViewController&gt;"
                   moduleName = "CityCamera"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/djugovic/Desktop/CityCamera/CityCamera/PhotoDisplayViewController.swift"
-                  timestampString = "475179195.045679"
+                  timestampString = "475180959.270396"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
