@@ -17,6 +17,7 @@
 		A92363D41C443BC100077101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92363D21C443BC100077101 /* LaunchScreen.storyboard */; };
 		A92363DC1C47134200077101 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92363DB1C47134200077101 /* PhotoViewController.swift */; };
 		BB58EBA21C4BAC9500B9E226 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58EBA11C4BAC9500B9E226 /* MapViewController.swift */; };
+		BBEAD56C1C53C1F80060CDA1 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEAD56B1C53C1F80060CDA1 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		A92363D51C443BC100077101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A92363DB1C47134200077101 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		BB58EBA11C4BAC9500B9E226 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		BBEAD56B1C53C1F80060CDA1 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				BB58EBA11C4BAC9500B9E226 /* MapViewController.swift */,
 				A91D9E081C529CF800A6C872 /* PhotoDisplayViewController.swift */,
 				A91D9E0C1C52A3C600A6C872 /* DataManager.swift */,
+				BBEAD56B1C53C1F80060CDA1 /* AboutViewController.swift */,
 			);
 			path = CityCamera;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				A91D9E091C529CF800A6C872 /* PhotoDisplayViewController.swift in Sources */,
 				A92363CC1C443BC100077101 /* ViewController.swift in Sources */,
 				A91D9E0D1C52A3C600A6C872 /* DataManager.swift in Sources */,
+				BBEAD56C1C53C1F80060CDA1 /* AboutViewController.swift in Sources */,
 				A92363CA1C443BC100077101 /* AppDelegate.swift in Sources */,
 				A92363DC1C47134200077101 /* PhotoViewController.swift in Sources */,
 				BB58EBA21C4BAC9500B9E226 /* MapViewController.swift in Sources */,

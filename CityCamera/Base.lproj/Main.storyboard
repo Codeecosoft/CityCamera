@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -25,17 +25,20 @@
                                     <segue destination="hcF-Nw-Zt9" kind="modal" id="lGn-H5-nJp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwT-oq-ZX2">
-                                <rect key="frame" x="16" y="298" width="134" height="250"/>
-                                <state key="normal" image="about" backgroundImage="1"/>
-                                <state key="highlighted" image="about_pressed" backgroundImage="2"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4n-Sq-iky">
                                 <rect key="frame" x="16" y="28" width="134" height="250"/>
                                 <state key="normal" image="photo" backgroundImage="1"/>
                                 <state key="highlighted" image="photo_pressed" backgroundImage="2"/>
                                 <connections>
                                     <segue destination="PWY-U9-Miz" kind="modal" modalTransitionStyle="coverVertical" id="kse-XS-Hs2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwT-oq-ZX2">
+                                <rect key="frame" x="16" y="298" width="134" height="250"/>
+                                <state key="normal" image="about" backgroundImage="1"/>
+                                <state key="highlighted" image="about_pressed" backgroundImage="2"/>
+                                <connections>
+                                    <segue destination="URh-79-TA2" kind="modal" id="8Se-CQ-8x0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gm-Wl-n9P">
@@ -177,9 +180,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="U79-7S-dVN">
-                                <rect key="frame" x="0.0" y="171" width="320" height="397"/>
-                            </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zk6-Kt-ZM3">
                                 <rect key="frame" x="218" y="68" width="46" height="30"/>
                                 <state key="normal" title="Close"/>
@@ -192,6 +192,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="U79-7S-dVN">
+                                <rect key="frame" x="0.0" y="171" width="320" height="397"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -203,6 +206,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BUt-cc-Ubp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="162" y="1124"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="Zjr-NG-S1P">
+            <objects>
+                <viewController id="URh-79-TA2" customClass="AboutViewController" customModule="CityCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5DJ-da-dni"/>
+                        <viewControllerLayoutGuide type="bottom" id="6zf-bg-6cf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ubj-Qg-kl6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ye-0E-Cju">
+                                <rect key="frame" x="186" y="51" width="69" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="close" destination="URh-79-TA2" eventType="touchUpInside" id="u4e-Vi-XhB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIj-Q6-OHm">
+                                <rect key="frame" x="51" y="51" width="46" height="30"/>
+                                <state key="normal" title="Ok"/>
+                                <connections>
+                                    <action selector="ok" destination="URh-79-TA2" eventType="touchUpInside" id="jH7-P9-tci"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4tB-PH-5JT">
+                                <rect key="frame" x="0.0" y="145" width="320" height="423"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="aboutT" destination="4tB-PH-5JT" id="ZhS-X0-aaC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hkq-yR-cGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="574" y="1124"/>
         </scene>
     </scenes>
     <resources>
