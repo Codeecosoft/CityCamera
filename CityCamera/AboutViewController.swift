@@ -20,8 +20,9 @@ class AboutViewController: UIViewController {
     }
     
     @IBAction func ok() {
-        dismissViewControllerAnimated(true, completion: nil)
         DataManager.sharedInstance.about = self.aboutT.text
+        dismissViewControllerAnimated(true, completion: nil)
+        
     }
     
     

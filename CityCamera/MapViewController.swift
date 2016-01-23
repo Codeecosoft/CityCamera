@@ -169,16 +169,22 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UITextFiel
     }
     
     @IBAction func close() {
-        dismissViewControllerAnimated(true, completion: nil)
         DataManager.sharedInstance.latitude = nil
         DataManager.sharedInstance.longitude = nil
         DataManager.sharedInstance.address = nil
+        dismissViewControllerAnimated(true, completion: nil)
+     
+    }
+    
+    @IBAction func ok() {
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
      func addressChanged() {
-        stopLocationManager()
         DataManager.sharedInstance.latitude = self.latitude
         DataManager.sharedInstance.longitude = self.longitude
         DataManager.sharedInstance.address = self.addressT.text
+        stopLocationManager()
+        
     }
 }

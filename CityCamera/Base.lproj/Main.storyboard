@@ -202,6 +202,13 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="U79-7S-dVN">
                                 <rect key="frame" x="0.0" y="171" width="320" height="397"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmg-tA-Zxs">
+                                <rect key="frame" x="33" y="68" width="55" height="30"/>
+                                <state key="normal" title="Ok"/>
+                                <connections>
+                                    <action selector="ok" destination="hcF-Nw-Zt9" eventType="touchUpInside" id="0O0-ds-ODy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
