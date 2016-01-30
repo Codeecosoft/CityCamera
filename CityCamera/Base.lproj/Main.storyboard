@@ -19,7 +19,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxP-km-zC8">
                                 <rect key="frame" x="170" y="28" width="134" height="250"/>
-                                <state key="normal" image="location"/>
+                                <state key="normal" image="location" backgroundImage="1"/>
                                 <state key="highlighted" image="location_pressed"/>
                                 <connections>
                                     <segue destination="hcF-Nw-Zt9" kind="modal" id="lGn-H5-nJp"/>
@@ -37,6 +37,10 @@
                                 <connections>
                                     <segue destination="PWY-U9-Miz" kind="modal" modalTransitionStyle="coverVertical" id="kse-XS-Hs2"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0v6-rd-lgM">
+                                <rect key="frame" x="130" y="254" width="60" height="60"/>
+                                <state key="normal" title="Button" image="ljubicasto"/>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gm-Wl-n9P">
                                 <rect key="frame" x="170" y="298" width="134" height="250"/>
@@ -71,6 +75,7 @@
                     </view>
                     <connections>
                         <outlet property="buttonAbout" destination="bwT-oq-ZX2" id="rA7-Dz-ETA"/>
+                        <outlet property="buttonCenter" destination="0v6-rd-lgM" id="u6z-Gk-IHb"/>
                         <outlet property="buttonLocation" destination="DxP-km-zC8" id="ctq-Ls-A1f"/>
                         <outlet property="buttonPhoto" destination="F4n-Sq-iky" id="2Oh-De-vaD"/>
                         <outlet property="buttonSend" destination="5Gm-Wl-n9P" id="yJ9-mx-6m6"/>
@@ -92,36 +97,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xID-sF-huM">
-                                <rect key="frame" x="259" y="20" width="41" height="30"/>
-                                <state key="normal" title="Photo"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_look" translatesAutoresizingMaskIntoConstraints="NO" id="L7i-gX-AHV">
+                                <rect key="frame" x="-4" y="28" width="328" height="540"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xID-sF-huM">
+                                <rect key="frame" x="36" y="121" width="68" height="30"/>
+                                <state key="normal" title="Photo" image="camera"/>
                                 <connections>
                                     <action selector="shootPhoto:" destination="PWY-U9-Miz" eventType="touchUpInside" id="Bwq-mR-HuZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwM-Ch-0qs">
-                                <rect key="frame" x="20" y="20" width="48" height="30"/>
-                                <state key="normal" title="Library"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwM-Ch-0qs">
+                                <rect key="frame" x="217" y="497" width="68" height="30"/>
+                                <state key="normal" title="Library" image="loading"/>
                                 <connections>
                                     <action selector="photofromLibrary:" destination="PWY-U9-Miz" eventType="touchUpInside" id="mRc-uF-rvb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XL7-TO-Nm7">
-                                <rect key="frame" x="136" y="494" width="48" height="30"/>
-                                <state key="normal" title="Cancel"/>
-                                <connections>
-                                    <action selector="close" destination="PWY-U9-Miz" eventType="touchUpInside" id="Btl-jM-jw7"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L7i-gX-AHV">
-                                <rect key="frame" x="40" y="282" width="240" height="128"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xID-sF-huM" firstAttribute="trailing" secondItem="L7i-gX-AHV" secondAttribute="trailing" id="2Gd-lr-PLs"/>
+                            <constraint firstItem="xID-sF-huM" firstAttribute="baseline" secondItem="L7i-gX-AHV" secondAttribute="baseline" id="6hb-5T-w09"/>
+                            <constraint firstItem="L7i-gX-AHV" firstAttribute="top" secondItem="YEQ-0D-zRN" secondAttribute="bottom" constant="8" id="8bd-SQ-fIg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L7i-gX-AHV" secondAttribute="trailing" constant="-20" id="P2T-6c-103"/>
+                            <constraint firstItem="mjz-LX-6w5" firstAttribute="top" secondItem="L7i-gX-AHV" secondAttribute="bottom" id="WUg-GH-up1"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="L7i-gX-AHV" secondAttribute="leading" constant="20" id="XA1-iw-FTS"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <connections>
                         <outlet property="myImageView" destination="L7i-gX-AHV" id="2lM-Bg-8ty"/>
+                        <outlet property="photoButton" destination="xID-sF-huM" id="WnO-J3-7bq"/>
+                        <outlet property="uploadButton" destination="wwM-Ch-0qs" id="9GC-Uq-bUY"/>
                         <segue destination="uo9-XT-9R7" kind="modal" identifier="PhotoDisplayScene" id="S37-D8-m7H"/>
                     </connections>
                 </viewController>
@@ -217,6 +225,10 @@
         <image name="2" width="470" height="724"/>
         <image name="about" width="940" height="828"/>
         <image name="about_pressed" width="940" height="828"/>
+        <image name="background_look" width="1080" height="1920"/>
+        <image name="camera" width="423" height="218"/>
+        <image name="ljubicasto" width="133" height="134"/>
+        <image name="loading" width="423" height="218"/>
         <image name="location" width="940" height="828"/>
         <image name="location_pressed" width="940" height="828"/>
         <image name="photo" width="940" height="828"/>

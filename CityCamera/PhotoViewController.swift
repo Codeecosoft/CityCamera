@@ -10,6 +10,8 @@ import UIKit
 
 class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     let picker = UIImagePickerController()
+    @IBOutlet weak var photoButton: UIButton!
+    @IBOutlet weak var uploadButton: UIButton!
     @IBOutlet weak var myImageView: UIImageView!
     
     @IBAction func shootPhoto(sender: UIButton){
@@ -47,6 +49,8 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self
+        photoButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
+        uploadButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
         // Do any additional setup after loading the view.
     }
 
@@ -76,8 +80,6 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
         didFinishPickingMediaWithInfo info: [String : AnyObject])
     {
         let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage
-        myImageView.contentMode = .ScaleAspectFit
-        myImageView.image = chosenImage
         DataManager.sharedInstance.image = chosenImage
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let nextViewController = storyboard.instantiateViewControllerWithIdentifier("PhotoDisplayView")

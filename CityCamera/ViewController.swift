@@ -13,10 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonLocation : UIButton!
     @IBOutlet weak var buttonSend : UIButton!
     @IBOutlet weak var buttonAbout : UIButton!
+    @IBOutlet weak var buttonCenter : UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         scaleButtons();
+        buttonCenter.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
         // Do any additional setup after loading the view, typically from a nib.
 
     }
