@@ -240,30 +240,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zk6-Kt-ZM3">
-                                <rect key="frame" x="218" y="68" width="46" height="30"/>
-                                <state key="normal" title="Close"/>
-                                <connections>
-                                    <action selector="close" destination="hcF-Nw-Zt9" eventType="touchUpInside" id="Q2B-lp-BkE"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OHJ-mr-8kC">
-                                <rect key="frame" x="0.0" y="20" width="320" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="U79-7S-dVN">
-                                <rect key="frame" x="0.0" y="171" width="320" height="397"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="U79-7S-dVN">
+                                <rect key="frame" x="24" y="168" width="272" height="380"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmg-tA-Zxs">
-                                <rect key="frame" x="33" y="68" width="55" height="30"/>
-                                <state key="normal" title="Ok"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmg-tA-Zxs">
+                                <rect key="frame" x="34" y="108" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6aI-Ok-orw"/>
+                                    <constraint firstAttribute="width" constant="80" id="Kub-7q-cpT"/>
+                                </constraints>
+                                <state key="normal" title="Ok" image="yes1"/>
+                                <state key="selected" image="yes_pressed1"/>
                                 <connections>
                                     <action selector="ok" destination="hcF-Nw-Zt9" eventType="touchUpInside" id="0O0-ds-ODy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zk6-Kt-ZM3">
+                                <rect key="frame" x="206" y="108" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Fcf-zJ-RY4"/>
+                                    <constraint firstAttribute="width" constant="80" id="r7x-Zt-bnd"/>
+                                </constraints>
+                                <state key="normal" title="Close" image="no1"/>
+                                <state key="selected" image="no_pressed1"/>
+                                <connections>
+                                    <action selector="close" destination="hcF-Nw-Zt9" eventType="touchUpInside" id="Q2B-lp-BkE"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OHJ-mr-8kC">
+                                <rect key="frame" x="20" y="63" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="OHJ-mr-8kC" secondAttribute="trailing" constant="4" id="40Y-X6-1ag"/>
+                            <constraint firstItem="Shz-mk-gZM" firstAttribute="top" secondItem="U79-7S-dVN" secondAttribute="bottom" constant="20" id="Eel-Rq-Pcl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U79-7S-dVN" secondAttribute="trailing" constant="8" id="FG0-Tt-ge6"/>
+                            <constraint firstItem="dmg-tA-Zxs" firstAttribute="leading" secondItem="kIf-fa-epN" secondAttribute="leadingMargin" constant="11" id="MKf-2a-fYt"/>
+                            <constraint firstItem="U79-7S-dVN" firstAttribute="top" secondItem="dmg-tA-Zxs" secondAttribute="bottom" constant="13" id="Q3E-CT-C4x"/>
+                            <constraint firstItem="OHJ-mr-8kC" firstAttribute="leading" secondItem="kIf-fa-epN" secondAttribute="leadingMargin" constant="4" id="XEA-hU-YRh"/>
+                            <constraint firstItem="OHJ-mr-8kC" firstAttribute="top" secondItem="Gsg-9U-0qo" secondAttribute="bottom" constant="43" id="aiL-A8-mo9"/>
+                            <constraint firstItem="U79-7S-dVN" firstAttribute="leading" secondItem="kIf-fa-epN" secondAttribute="leadingMargin" constant="8" id="bBd-nN-JIS"/>
+                            <constraint firstItem="U79-7S-dVN" firstAttribute="top" secondItem="zk6-Kt-ZM3" secondAttribute="bottom" constant="13" id="mEs-PS-y8r"/>
+                            <constraint firstItem="dmg-tA-Zxs" firstAttribute="top" secondItem="OHJ-mr-8kC" secondAttribute="bottom" constant="15" id="suu-rr-X4D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zk6-Kt-ZM3" secondAttribute="trailing" constant="17" id="uHn-lS-b8h"/>
+                            <constraint firstItem="zk6-Kt-ZM3" firstAttribute="top" secondItem="OHJ-mr-8kC" secondAttribute="bottom" constant="15" id="zml-O3-pkp"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="addressT" destination="OHJ-mr-8kC" id="3mi-TX-GVX"/>
@@ -272,7 +296,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BUt-cc-Ubp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="1124"/>
+            <point key="canvasLocation" x="61" y="1124"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="Zjr-NG-S1P">
@@ -286,28 +310,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ye-0E-Cju">
-                                <rect key="frame" x="186" y="51" width="69" height="30"/>
-                                <state key="normal" title="Cancel"/>
-                                <connections>
-                                    <action selector="close" destination="URh-79-TA2" eventType="touchUpInside" id="u4e-Vi-XhB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIj-Q6-OHm">
-                                <rect key="frame" x="51" y="51" width="46" height="30"/>
-                                <state key="normal" title="Ok"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIj-Q6-OHm">
+                                <rect key="frame" x="120" y="513" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="jJp-kV-Klu"/>
+                                    <constraint firstAttribute="height" constant="40" id="wZH-9l-Bfh"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="yes1"/>
+                                <state key="selected" backgroundImage="yes_pressed1"/>
                                 <connections>
                                     <action selector="ok" destination="URh-79-TA2" eventType="touchUpInside" id="jH7-P9-tci"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4tB-PH-5JT">
-                                <rect key="frame" x="0.0" y="145" width="320" height="423"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4tB-PH-5JT">
+                                <rect key="frame" x="16" y="63" width="288" height="409"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6zf-bg-6cf" firstAttribute="top" secondItem="PIj-Q6-OHm" secondAttribute="bottom" constant="15" id="Teq-Lb-gcT"/>
+                            <constraint firstItem="PIj-Q6-OHm" firstAttribute="top" secondItem="4tB-PH-5JT" secondAttribute="bottom" constant="41" id="gDI-Uz-cRy"/>
+                            <constraint firstItem="PIj-Q6-OHm" firstAttribute="centerX" secondItem="ubj-Qg-kl6" secondAttribute="centerX" id="iIj-wL-maq"/>
+                            <constraint firstItem="4tB-PH-5JT" firstAttribute="top" secondItem="5DJ-da-dni" secondAttribute="bottom" constant="43" id="kOR-pZ-uAU"/>
+                            <constraint firstItem="4tB-PH-5JT" firstAttribute="trailing" secondItem="ubj-Qg-kl6" secondAttribute="trailingMargin" id="nmJ-nE-RPX"/>
+                            <constraint firstItem="4tB-PH-5JT" firstAttribute="leading" secondItem="ubj-Qg-kl6" secondAttribute="leadingMargin" id="ryb-80-kbA"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="aboutT" destination="4tB-PH-5JT" id="ZhS-X0-aaC"/>
@@ -328,9 +358,13 @@
         <image name="loading" width="423" height="218"/>
         <image name="location" width="940" height="828"/>
         <image name="location_pressed" width="940" height="828"/>
+        <image name="no1" width="423" height="218"/>
+        <image name="no_pressed1" width="423" height="218"/>
         <image name="photo" width="940" height="828"/>
         <image name="photo_pressed" width="940" height="828"/>
         <image name="send" width="940" height="828"/>
         <image name="send_pressed" width="940" height="828"/>
+        <image name="yes1" width="423" height="218"/>
+        <image name="yes_pressed1" width="423" height="218"/>
     </resources>
 </document>
