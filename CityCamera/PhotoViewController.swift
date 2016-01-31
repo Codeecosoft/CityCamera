@@ -48,9 +48,12 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.awakeFromNib()
         picker.delegate = self
         photoButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
         uploadButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
+        myImageView.contentMode = UIViewContentMode.ScaleToFill
+        myImageView.image = UIImage(named:"background_look_noheader")
         // Do any additional setup after loading the view.
     }
 
