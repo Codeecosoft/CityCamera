@@ -48,7 +48,6 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.awakeFromNib()
         picker.delegate = self
         photoButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
         uploadButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
