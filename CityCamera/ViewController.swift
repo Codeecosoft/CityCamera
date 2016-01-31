@@ -14,13 +14,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonSend : UIButton!
     @IBOutlet weak var buttonAbout : UIButton!
     @IBOutlet weak var buttonCenter : UIButton!
+    @IBOutlet weak var logoImageView : UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         scaleButtons();
         buttonCenter.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
-        // Do any additional setup after loading the view, typically from a nib.
-
+        
+        //TODO make auto width instead of 1000
+        let lineView = UIView(frame: CGRectMake(0, 0, 1000, 1))
+        lineView.backgroundColor=UIColor.blackColor()
+        logoImageView.addSubview(lineView)
     }
     
     override func viewWillAppear(animated: Bool) {
