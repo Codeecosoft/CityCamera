@@ -14,17 +14,13 @@ class AboutViewController: UIViewController {
     
     
     
-    @IBAction func close() {
-        dismissViewControllerAnimated(true, completion: nil)
-        DataManager.sharedInstance.about = nil
-    }
-    
     @IBAction func ok() {
         DataManager.sharedInstance.about = self.aboutT.text
         dismissViewControllerAnimated(true, completion: nil)
+
         
     }
-    
+   
     
     
 }
