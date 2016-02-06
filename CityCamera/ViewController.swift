@@ -41,6 +41,21 @@ class ViewController: UIViewController {
         buttonLocation.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
         buttonSend.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
         buttonAbout.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
+        
+        buttonPhoto.layer.borderWidth = 1
+        buttonPhoto.layer.borderColor = UIColor(red: 93.0/255.0, green: 217.0/255.0, blue: 198.0/255.0, alpha: 1.0).CGColor
+        buttonLocation.layer.borderWidth = 1
+        buttonLocation.layer.borderColor = UIColor(red: 93.0/255.0, green: 217.0/255.0, blue: 198.0/255.0, alpha: 1.0).CGColor
+        buttonSend.layer.borderWidth = 1
+        buttonSend.layer.borderColor = UIColor(red: 93.0/255.0, green: 217.0/255.0, blue: 198.0/255.0, alpha: 1.0).CGColor
+        buttonAbout.layer.borderWidth = 1
+        buttonAbout.layer.borderColor = UIColor(red: 93.0/255.0, green: 217.0/255.0, blue: 198.0/255.0, alpha: 1.0).CGColor
+        
+        buttonCenter.layer.shadowOpacity = 0.7
+        buttonCenter.layer.shadowOffset = CGSize(width: 6.0, height: 4.0)
+        buttonCenter.layer.shadowRadius = 10.0
+        buttonCenter.layer.shadowColor = UIColor.purpleColor().CGColor
+        //buttonCenter.layer.cornerRadius = 1
     }
     
     @IBAction func sendData() {

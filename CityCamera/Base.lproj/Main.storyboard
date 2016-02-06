@@ -19,6 +19,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4n-Sq-iky">
                                 <rect key="frame" x="16" y="77" width="134" height="201"/>
+                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <state key="normal" image="photo" backgroundImage="1"/>
                                 <state key="highlighted" image="photo_pressed" backgroundImage="2"/>
                                 <connections>
@@ -27,6 +28,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxP-km-zC8">
                                 <rect key="frame" x="170" y="77" width="134" height="201"/>
+                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <state key="normal" image="location" backgroundImage="1"/>
                                 <state key="highlighted" image="location_pressed"/>
                                 <connections>
@@ -35,6 +37,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r92-f4-AUJ">
                                 <rect key="frame" x="16" y="298" width="134" height="201"/>
+                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <state key="normal" image="about" backgroundImage="1"/>
                                 <state key="highlighted" image="about_pressed" backgroundImage="2"/>
                                 <connections>
@@ -44,6 +47,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gm-Wl-n9P">
                                 <rect key="frame" x="170" y="298" width="134" height="201"/>
+                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <state key="normal" image="send" backgroundImage="1"/>
                                 <state key="highlighted" image="send_pressed" backgroundImage="2"/>
                                 <connections>

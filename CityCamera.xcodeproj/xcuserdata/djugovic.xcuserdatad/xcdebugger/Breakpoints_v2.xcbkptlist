@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CityCamera/ViewController.swift"
-            timestampString = "475972518.036988"
+            timestampString = "476306069.871341"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "sendData()"
             landmarkType = "5">
          </BreakpointContent>
