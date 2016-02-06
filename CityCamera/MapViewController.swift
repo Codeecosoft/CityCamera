@@ -15,6 +15,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UITextFiel
     @IBOutlet weak var mapView: MKMapView!
    
     
+    @IBOutlet weak var cancel: UIBarButtonItem!
+    
     let locationManager = CLLocationManager()
     var location: CLLocation?
     var lastLocationError: NSError?
@@ -56,6 +58,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UITextFiel
         addressT.delegate = self
         
         addressT.addTarget(self, action: "addressChanged", forControlEvents: UIControlEvents.TouchDown)
+        
+//        let image = UIImage(named: "yes1")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+//       cancel.setBackgroundImage(image, forState: .Normal, barMetrics: .Default)
     }
 
     
