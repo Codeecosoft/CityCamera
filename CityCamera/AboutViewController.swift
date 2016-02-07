@@ -12,14 +12,26 @@ class AboutViewController: UIViewController {
     
     @IBOutlet weak var aboutT: UITextView!
     
-    
+    override func viewDidLoad() {
+        aboutT.becomeFirstResponder()
+        super.viewDidLoad()
+    }
     
     @IBAction func ok() {
         DataManager.sharedInstance.about = self.aboutT.text
         dismissViewControllerAnimated(true, completion: nil)
 
+    }
+    
+    
+    @IBAction func cancel() {
+        DataManager.sharedInstance.about = self.aboutT.text
+        dismissViewControllerAnimated(true, completion: nil)
         
     }
+    
+    
+    
    
     
     
