@@ -160,7 +160,14 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Fotografija" id="BTi-00-vFt"/>
+                                    <navigationItem title="Fotografija" id="BTi-00-vFt">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="itI-pJ-TvL">
+                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="backFun" destination="PWY-U9-Miz" id="j9b-t5-SYl"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AaV-7F-hGD" customClass="UIImageView">
@@ -211,6 +218,7 @@
                     </view>
                     <toolbarItems/>
                     <connections>
+                        <outlet property="back" destination="itI-pJ-TvL" id="Vt5-jx-Onl"/>
                         <outlet property="myImageView" destination="AaV-7F-hGD" id="fSt-Zz-uk0"/>
                         <outlet property="photoButton" destination="xID-sF-huM" id="WnO-J3-7bq"/>
                         <outlet property="uploadButton" destination="wwM-Ch-0qs" id="9GC-Uq-bUY"/>

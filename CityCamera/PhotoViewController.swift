@@ -14,6 +14,8 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
     @IBOutlet weak var uploadButton: UIButton!
     @IBOutlet weak var myImageView: UIImageView!
     
+    @IBOutlet weak var back: UIBarButtonItem!
+    
     @IBAction func shootPhoto(sender: UIButton){
         if UIImagePickerController.availableCaptureModesForCameraDevice(.Rear) != nil {
             picker.allowsEditing = false
@@ -91,6 +93,10 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         DataManager.sharedInstance.image = nil
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func backFun() {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
