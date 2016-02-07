@@ -339,16 +339,27 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6B9-mc-hgL">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="wve-9g-GoW"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="6B9-mc-hgL" firstAttribute="leading" secondItem="kIf-fa-epN" secondAttribute="leadingMargin" constant="-20" id="40a-h7-NKA"/>
                             <constraint firstItem="OHJ-mr-8kC" firstAttribute="top" secondItem="beW-qr-4JW" secondAttribute="bottom" constant="18" id="6CZ-WU-T7g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6B9-mc-hgL" secondAttribute="trailing" constant="-20" id="7Qy-PU-ZaX"/>
+                            <constraint firstItem="6B9-mc-hgL" firstAttribute="top" secondItem="kIf-fa-epN" secondAttribute="topMargin" id="Ads-IW-Kv4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="U79-7S-dVN" secondAttribute="trailing" id="B0f-bI-XAZ"/>
                             <constraint firstItem="OHJ-mr-8kC" firstAttribute="leading" secondItem="kIf-fa-epN" secondAttribute="leadingMargin" id="L1Q-Zf-Mlc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OHJ-mr-8kC" secondAttribute="trailing" id="VyX-P0-HwN"/>
                             <constraint firstItem="Shz-mk-gZM" firstAttribute="top" secondItem="U79-7S-dVN" secondAttribute="bottom" constant="16" id="Xx6-hp-Z28"/>
                             <constraint firstAttribute="trailingMargin" secondItem="beW-qr-4JW" secondAttribute="trailing" constant="-20" id="ZyF-9K-Dna"/>
                             <constraint firstItem="beW-qr-4JW" firstAttribute="top" secondItem="Gsg-9U-0qo" secondAttribute="bottom" id="aUL-GN-4u2"/>
+                            <constraint firstItem="beW-qr-4JW" firstAttribute="top" secondItem="6B9-mc-hgL" secondAttribute="bottom" id="anj-Q1-XtK"/>
                             <constraint firstItem="beW-qr-4JW" firstAttribute="leading" secondItem="kIf-fa-epN" secondAttribute="leadingMargin" constant="-20" id="gbb-tq-3py"/>
                             <constraint firstItem="U79-7S-dVN" firstAttribute="leading" secondItem="kIf-fa-epN" secondAttribute="leadingMargin" id="kZ7-Z0-s8Q"/>
                             <constraint firstItem="U79-7S-dVN" firstAttribute="top" secondItem="OHJ-mr-8kC" secondAttribute="bottom" constant="18" id="mgT-Qh-ceF"/>

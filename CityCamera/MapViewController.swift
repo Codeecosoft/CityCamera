@@ -192,4 +192,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, UITextFiel
         stopLocationManager()
         
     }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
 }
