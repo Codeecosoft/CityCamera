@@ -101,5 +101,9 @@ class ViewController: UIViewController {
         
         return sbUrl
     }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
 }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -58,18 +58,28 @@
                                 <rect key="frame" x="130" y="254" width="60" height="60"/>
                                 <state key="normal" title="Button" image="ljubicasto"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_hyperether" translatesAutoresizingMaskIntoConstraints="NO" id="bOV-Qh-7HU">
+                                <rect key="frame" x="-8" y="518" width="336" height="50"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Yk-tQ-8uT">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="pgJ-x7-3W6"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="du3-MY-na3">
                                 <rect key="frame" x="-4" y="20" width="328" height="44"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app-icon" translatesAutoresizingMaskIntoConstraints="NO" id="i5i-4H-I8K">
-                                        <rect key="frame" x="12" y="6" width="30" height="30"/>
+                                        <rect key="frame" x="98" y="6" width="30" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="Ud2-GF-Eme"/>
                                             <constraint firstAttribute="height" constant="30" id="X0D-dY-Y20"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CityCamera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRq-ay-R60">
-                                        <rect key="frame" x="51" y="5" width="93" height="33"/>
+                                        <rect key="frame" x="137" y="5" width="93" height="33"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="33" id="6FX-5W-4r4"/>
@@ -84,14 +94,11 @@
                                 <constraints>
                                     <constraint firstItem="i5i-4H-I8K" firstAttribute="top" secondItem="du3-MY-na3" secondAttribute="top" constant="6" id="4Xs-i6-PMh"/>
                                     <constraint firstItem="qRq-ay-R60" firstAttribute="leading" secondItem="i5i-4H-I8K" secondAttribute="trailing" constant="9" id="9JM-2B-4c5"/>
-                                    <constraint firstItem="i5i-4H-I8K" firstAttribute="leading" secondItem="du3-MY-na3" secondAttribute="leading" constant="12" id="D5p-Gk-AR4"/>
+                                    <constraint firstItem="i5i-4H-I8K" firstAttribute="leading" secondItem="du3-MY-na3" secondAttribute="leading" constant="98" id="D5p-Gk-AR4"/>
                                     <constraint firstItem="qRq-ay-R60" firstAttribute="top" secondItem="du3-MY-na3" secondAttribute="top" constant="5" id="oJG-1A-iAc"/>
                                     <constraint firstAttribute="height" constant="44" id="vyu-Ku-tt6"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_hyperether" translatesAutoresizingMaskIntoConstraints="NO" id="bOV-Qh-7HU">
-                                <rect key="frame" x="-8" y="518" width="336" height="50"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -112,7 +119,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="bOV-Qh-7HU" secondAttribute="trailing" constant="-24" id="VQK-r1-8Rx"/>
                             <constraint firstItem="5Gm-Wl-n9P" firstAttribute="leading" secondItem="r92-f4-AUJ" secondAttribute="trailing" constant="20" id="Ypf-Dk-fOq"/>
                             <constraint firstItem="DxP-km-zC8" firstAttribute="width" secondItem="F4n-Sq-iky" secondAttribute="width" id="aFd-Ts-SdZ"/>
+                            <constraint firstItem="4Yk-tQ-8uT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="aKx-77-96R"/>
                             <constraint firstItem="bOV-Qh-7HU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="r92-f4-AUJ" secondAttribute="bottom" constant="19" id="bqa-ZZ-Cza"/>
+                            <constraint firstItem="4Yk-tQ-8uT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="ejk-3T-qPo"/>
                             <constraint firstItem="F4n-Sq-iky" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fMs-Zs-evY"/>
                             <constraint firstItem="0v6-rd-lgM" firstAttribute="top" secondItem="F4n-Sq-iky" secondAttribute="bottom" constant="-24" id="fa7-J5-LG1"/>
                             <constraint firstItem="du3-MY-na3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hDn-KJ-QOp"/>
@@ -122,12 +131,14 @@
                             <constraint firstItem="0v6-rd-lgM" firstAttribute="top" secondItem="DxP-km-zC8" secondAttribute="bottom" constant="-24" id="piF-2N-0qh"/>
                             <constraint firstItem="5Gm-Wl-n9P" firstAttribute="top" secondItem="0v6-rd-lgM" secondAttribute="bottom" constant="-16" id="ppJ-9n-9b0"/>
                             <constraint firstItem="5Gm-Wl-n9P" firstAttribute="leading" secondItem="0v6-rd-lgM" secondAttribute="trailing" constant="-20" id="pxa-op-5l9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Yk-tQ-8uT" secondAttribute="trailing" constant="-20" id="rBk-Kw-i2t"/>
                             <constraint firstItem="5Gm-Wl-n9P" firstAttribute="top" secondItem="DxP-km-zC8" secondAttribute="bottom" constant="20" id="uFL-R0-1eo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="du3-MY-na3" secondAttribute="trailing" constant="-20" id="vNW-ZQ-2RJ"/>
                             <constraint firstItem="0v6-rd-lgM" firstAttribute="leading" secondItem="F4n-Sq-iky" secondAttribute="trailing" constant="-20" id="vVK-hL-SKg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5Gm-Wl-n9P" secondAttribute="bottom" constant="69" id="zna-Y7-0eF"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="buttonAbout" destination="r92-f4-AUJ" id="ILH-IP-Isw"/>
                         <outlet property="buttonCenter" destination="0v6-rd-lgM" id="u6z-Gk-IHb"/>
@@ -144,7 +155,7 @@
         <!--Photo View Controller-->
         <scene sceneID="LFj-Xu-aIa">
             <objects>
-                <viewController id="PWY-U9-Miz" customClass="PhotoViewController" customModule="CityCamera" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhotoViewController" id="PWY-U9-Miz" customClass="PhotoViewController" customModule="CityCamera" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YEQ-0D-zRN"/>
                         <viewControllerLayoutGuide type="bottom" id="mjz-LX-6w5"/>
@@ -153,23 +164,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeR-kU-2A2">
-                                <rect key="frame" x="-4" y="20" width="328" height="44"/>
-                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Fotografija" id="BTi-00-vFt">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="itI-pJ-TvL">
-                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <connections>
-                                                <action selector="backFun" destination="PWY-U9-Miz" id="j9b-t5-SYl"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AaV-7F-hGD" customClass="UIImageView">
                                 <rect key="frame" x="16" y="82" width="288" height="466"/>
                                 <subviews>
@@ -204,21 +198,47 @@
                                     <constraint firstItem="xID-sF-huM" firstAttribute="top" secondItem="AaV-7F-hGD" secondAttribute="top" constant="20" id="pOm-A0-RIP"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6S-m3-ltf">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="8L6-sg-dg7"/>
+                                </constraints>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HD7-8g-XRP">
+                                <rect key="frame" x="-4" y="20" width="328" height="44"/>
+                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Fotografija" id="ZFf-fe-ZgD">
+                                        <barButtonItem key="leftBarButtonItem" image="cancel" id="hGj-A0-I4w">
+                                            <color key="tintColor" red="0.88235294119999996" green="0.23529411759999999" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="close" destination="PWY-U9-Miz" id="Nde-oV-B1n"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="AaV-7F-hGD" firstAttribute="top" secondItem="GeR-kU-2A2" secondAttribute="bottom" constant="18" id="80r-Wp-fqB"/>
+                            <constraint firstItem="AaV-7F-hGD" firstAttribute="top" secondItem="HD7-8g-XRP" secondAttribute="bottom" constant="18" id="1NA-wB-ZpW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HD7-8g-XRP" secondAttribute="trailing" constant="-20" id="8th-sr-nxn"/>
+                            <constraint firstItem="HD7-8g-XRP" firstAttribute="top" secondItem="YEQ-0D-zRN" secondAttribute="bottom" id="Bnk-WO-bjI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AaV-7F-hGD" secondAttribute="trailing" id="CbU-Ud-OGf"/>
-                            <constraint firstItem="GeR-kU-2A2" firstAttribute="top" secondItem="YEQ-0D-zRN" secondAttribute="bottom" id="GGw-o7-dnf"/>
-                            <constraint firstItem="GeR-kU-2A2" firstAttribute="leading" secondItem="XKc-gW-hMg" secondAttribute="leadingMargin" constant="-20" id="Grj-00-chZ"/>
                             <constraint firstItem="mjz-LX-6w5" firstAttribute="top" secondItem="AaV-7F-hGD" secondAttribute="bottom" constant="20" id="Lc5-x2-vJK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GeR-kU-2A2" secondAttribute="trailing" constant="-20" id="qn6-mt-nEf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="r6S-m3-ltf" secondAttribute="trailing" constant="-20" id="VSj-e6-Roe"/>
+                            <constraint firstItem="HD7-8g-XRP" firstAttribute="leading" secondItem="XKc-gW-hMg" secondAttribute="leadingMargin" constant="-20" id="ctB-8J-62d"/>
+                            <constraint firstItem="r6S-m3-ltf" firstAttribute="top" secondItem="XKc-gW-hMg" secondAttribute="topMargin" id="pso-7S-lOL"/>
                             <constraint firstItem="AaV-7F-hGD" firstAttribute="leading" secondItem="XKc-gW-hMg" secondAttribute="leadingMargin" id="r3v-wG-RLd"/>
+                            <constraint firstItem="r6S-m3-ltf" firstAttribute="leading" secondItem="XKc-gW-hMg" secondAttribute="leadingMargin" constant="-20" id="tuW-0p-2eg"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <connections>
-                        <outlet property="back" destination="itI-pJ-TvL" id="Vt5-jx-Onl"/>
                         <outlet property="myImageView" destination="AaV-7F-hGD" id="fSt-Zz-uk0"/>
                         <outlet property="photoButton" destination="xID-sF-huM" id="WnO-J3-7bq"/>
                         <outlet property="uploadButton" destination="wwM-Ch-0qs" id="9GC-Uq-bUY"/>
@@ -248,38 +268,49 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qyw-df-bJS">
                                 <rect key="frame" x="16" y="82" width="288" height="470"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewM-CO-Dwo">
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQ3-VL-ulc">
                                 <rect key="frame" x="-4" y="20" width="328" height="44"/>
                                 <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Fotografija" id="3s4-Iu-FzD">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="vLu-we-5VC">
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <navigationItem title="Fotografija" id="oRa-UN-A4C">
+                                        <barButtonItem key="leftBarButtonItem" image="cancel" id="960-af-lSF">
+                                            <color key="tintColor" red="0.88235294119999996" green="0.23529411759999999" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
-                                                <action selector="cancel" destination="uo9-XT-9R7" id="q0k-fk-KiN"/>
+                                                <action selector="cancel" destination="uo9-XT-9R7" id="fLn-dY-Rhp"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="fNR-7d-1NL">
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <barButtonItem key="rightBarButtonItem" image="checked" id="1qu-LP-u3P">
+                                            <color key="tintColor" red="0.88235294119999996" green="0.23529411759999999" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="modal" id="y1a-mV-rcd"/>
+                                                <segue destination="BYZ-38-t0r" kind="modal" id="Z27-de-l5t"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YTZ-Og-9Go">
+                                <rect key="frame" x="-4" y="0.0" width="336" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="POZ-y9-3PI"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ewM-CO-Dwo" firstAttribute="top" secondItem="Wzf-7O-soX" secondAttribute="bottom" id="7ZS-3q-kve"/>
+                            <constraint firstItem="YTZ-Og-9Go" firstAttribute="top" secondItem="67l-g2-YUn" secondAttribute="topMargin" id="1ho-jr-XZx"/>
+                            <constraint firstItem="VQ3-VL-ulc" firstAttribute="top" secondItem="Wzf-7O-soX" secondAttribute="bottom" id="9w9-o7-XBY"/>
+                            <constraint firstItem="qyw-df-bJS" firstAttribute="top" secondItem="VQ3-VL-ulc" secondAttribute="bottom" constant="18" id="AMX-lT-kFk"/>
+                            <constraint firstItem="VQ3-VL-ulc" firstAttribute="top" secondItem="Wzf-7O-soX" secondAttribute="bottom" id="GYU-eu-PCi"/>
                             <constraint firstItem="qyw-df-bJS" firstAttribute="leading" secondItem="67l-g2-YUn" secondAttribute="leadingMargin" id="Gyt-bz-ecf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ewM-CO-Dwo" secondAttribute="trailing" constant="-20" id="I4m-bx-znr"/>
                             <constraint firstItem="97D-d3-ppL" firstAttribute="top" secondItem="qyw-df-bJS" secondAttribute="bottom" constant="16" id="MkX-La-qSQ"/>
-                            <constraint firstItem="qyw-df-bJS" firstAttribute="top" secondItem="ewM-CO-Dwo" secondAttribute="bottom" constant="18" id="Nak-q2-JLh"/>
-                            <constraint firstItem="ewM-CO-Dwo" firstAttribute="leading" secondItem="67l-g2-YUn" secondAttribute="leadingMargin" constant="-20" id="rMQ-a9-Jll"/>
+                            <constraint firstItem="YTZ-Og-9Go" firstAttribute="leading" secondItem="67l-g2-YUn" secondAttribute="leadingMargin" constant="-20" id="TjV-c7-tX7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YTZ-Og-9Go" secondAttribute="trailing" constant="-28" id="eKX-Ll-Pyz"/>
+                            <constraint firstItem="VQ3-VL-ulc" firstAttribute="leading" secondItem="67l-g2-YUn" secondAttribute="leadingMargin" constant="-20" id="qRT-jd-DUU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VQ3-VL-ulc" secondAttribute="trailing" constant="-20" id="sFP-ji-HJW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qyw-df-bJS" secondAttribute="trailing" id="ut2-QW-0l5"/>
                         </constraints>
                     </view>
@@ -315,30 +346,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="beW-qr-4JW">
-                                <rect key="frame" x="-4" y="20" width="328" height="44"/>
-                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Lokacija" id="9Rm-mO-isD">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="0w7-HN-1gj">
-                                            <inset key="imageInsets" minX="10" minY="2" maxX="20" maxY="2"/>
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                            <connections>
-                                                <action selector="close" destination="hcF-Nw-Zt9" id="1Zm-Xn-t4C"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Sg7-XY-CDF">
-                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <connections>
-                                                <action selector="ok" destination="hcF-Nw-Zt9" id="vp8-Af-di9"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6B9-mc-hgL">
                                 <rect key="frame" x="-4" y="0.0" width="328" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -346,6 +353,29 @@
                                     <constraint firstAttribute="height" constant="20" id="wve-9g-GoW"/>
                                 </constraints>
                             </view>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beW-qr-4JW">
+                                <rect key="frame" x="-4" y="20" width="328" height="44"/>
+                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Lokacija" id="9Rm-mO-isD">
+                                        <barButtonItem key="leftBarButtonItem" image="cancel" id="Wvf-yZ-wqK">
+                                            <color key="tintColor" red="0.88235294117647056" green="0.23529411764705882" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="close" destination="hcF-Nw-Zt9" id="Yo4-4p-YQu"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" image="checked" id="Sg7-XY-CDF">
+                                            <color key="tintColor" red="0.88235294117647056" green="0.23529411764705882" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="ok" destination="hcF-Nw-Zt9" id="vp8-Af-di9"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -367,17 +397,17 @@
                     </view>
                     <connections>
                         <outlet property="addressT" destination="OHJ-mr-8kC" id="3mi-TX-GVX"/>
-                        <outlet property="cancel" destination="0w7-HN-1gj" id="myi-FW-U97"/>
                         <outlet property="mapView" destination="U79-7S-dVN" id="60p-Ax-Jbp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BUt-cc-Ubp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56" y="1124"/>
+            <point key="canvasLocation" x="130" y="1114"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="Zjr-NG-S1P">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hkq-yR-cGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="URh-79-TA2" customClass="AboutViewController" customModule="CityCamera" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5DJ-da-dni"/>
@@ -387,52 +417,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kkh-RH-FoN">
-                                <rect key="frame" x="-4" y="20" width="328" height="44"/>
-                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="Title" id="0VW-bH-UpV">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="5F2-0z-4uF">
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                            <connections>
-                                                <action selector="cancel" destination="URh-79-TA2" id="lxq-dB-cHp"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="qSH-rX-Xky">
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                            <connections>
-                                                <action selector="ok" destination="URh-79-TA2" id="WeS-bB-2FH"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4tB-PH-5JT">
                                 <rect key="frame" x="16" y="82" width="288" height="470"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KDq-Qe-7Jj">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="UY2-ga-zMp"/>
+                                </constraints>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rle-T1-bEE">
+                                <rect key="frame" x="-4" y="20" width="328" height="44"/>
+                                <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Opis" id="xuq-i2-dIZ">
+                                        <barButtonItem key="leftBarButtonItem" image="cancel" id="3R7-Aq-toc">
+                                            <color key="tintColor" red="0.88235294119999996" green="0.23529411759999999" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="cancel" destination="URh-79-TA2" id="Dn1-q8-f3v"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" image="checked" id="bZH-GI-b5F">
+                                            <color key="tintColor" red="0.88235294119999996" green="0.23529411759999999" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="ok" destination="URh-79-TA2" id="YBq-NW-KmC"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="4tB-PH-5JT" secondAttribute="trailing" id="0rq-8L-Ntt"/>
-                            <constraint firstItem="Kkh-RH-FoN" firstAttribute="leading" secondItem="ubj-Qg-kl6" secondAttribute="leadingMargin" constant="-20" id="2v0-gU-bbG"/>
                             <constraint firstItem="4tB-PH-5JT" firstAttribute="leading" secondItem="ubj-Qg-kl6" secondAttribute="leadingMargin" id="NCX-1y-19G"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Kkh-RH-FoN" secondAttribute="trailing" constant="-20" id="Sf0-Kd-kDh"/>
-                            <constraint firstItem="Kkh-RH-FoN" firstAttribute="top" secondItem="5DJ-da-dni" secondAttribute="bottom" id="X40-d2-bul"/>
-                            <constraint firstItem="4tB-PH-5JT" firstAttribute="top" secondItem="Kkh-RH-FoN" secondAttribute="bottom" constant="18" id="YGC-Sv-Mdn"/>
+                            <constraint firstItem="Rle-T1-bEE" firstAttribute="leading" secondItem="ubj-Qg-kl6" secondAttribute="leadingMargin" constant="-20" id="RPA-CT-Xdh"/>
+                            <constraint firstItem="KDq-Qe-7Jj" firstAttribute="top" secondItem="ubj-Qg-kl6" secondAttribute="topMargin" id="Wce-J8-quD"/>
+                            <constraint firstItem="KDq-Qe-7Jj" firstAttribute="leading" secondItem="ubj-Qg-kl6" secondAttribute="leadingMargin" constant="-20" id="ZAP-uF-NkR"/>
                             <constraint firstItem="6zf-bg-6cf" firstAttribute="top" secondItem="4tB-PH-5JT" secondAttribute="bottom" constant="16" id="eXa-Xp-wVh"/>
+                            <constraint firstItem="Rle-T1-bEE" firstAttribute="top" secondItem="5DJ-da-dni" secondAttribute="bottom" id="iqc-pS-bSP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rle-T1-bEE" secondAttribute="trailing" constant="-20" id="jwJ-Oe-dIs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KDq-Qe-7Jj" secondAttribute="trailing" constant="-20" id="v5e-1U-M41"/>
+                            <constraint firstItem="4tB-PH-5JT" firstAttribute="top" secondItem="Rle-T1-bEE" secondAttribute="bottom" constant="18" id="z7P-Ap-woD"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="aboutT" destination="4tB-PH-5JT" id="cfW-Gn-8MA"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hkq-yR-cGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="574" y="1124"/>
         </scene>
@@ -444,6 +483,8 @@
         <image name="about_pressed" width="940" height="828"/>
         <image name="app-icon" width="500" height="500"/>
         <image name="camera" width="423" height="218"/>
+        <image name="cancel" width="25" height="25"/>
+        <image name="checked" width="25" height="25"/>
         <image name="ljubicasto" width="133" height="134"/>
         <image name="loading" width="423" height="218"/>
         <image name="location" width="940" height="828"/>

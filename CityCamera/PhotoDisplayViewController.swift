@@ -18,7 +18,13 @@ class PhotoDisplayViewController: UIViewController {
     
     @IBAction func cancel() {
         DataManager.sharedInstance.image = nil
-        dismissViewControllerAnimated(true, completion: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextViewController = storyboard.instantiateViewControllerWithIdentifier("PhotoViewController")
+        self.presentViewController(nextViewController, animated: true, completion: nil)
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
     
 }

@@ -30,9 +30,7 @@ class AboutViewController: UIViewController {
         
     }
     
-    
-    
-   
-    
-    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
 }

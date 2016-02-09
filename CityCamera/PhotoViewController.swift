@@ -100,6 +100,8 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
 
 }
